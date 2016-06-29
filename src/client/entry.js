@@ -6,6 +6,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import { syncHistoryWithStore, routerReducer, routerMiddleware } from 'react-router-redux'
 import App from "./components/app"
 import reducers from './reducers'
+import "./styles/app.less"
 
 const middleware = routerMiddleware(browserHistory)
 
