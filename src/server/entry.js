@@ -1,11 +1,5 @@
 var express = require('express');
 
-var authorize = function (username, password) {
-    //UNCOMMENT THIS LINE IF YOU WANT A PASSWORD PROTECTED SITE
-    //return 'someone' === username & 'password' === password;
-    return true;
-};
-
 var configureServer = function() {
     var server = express.createServer(    );
 
