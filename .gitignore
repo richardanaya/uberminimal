@@ -2,3 +2,5 @@
 .DS_Store
 *.log
 node_modules
+server-bundle.js
+client-bundle.js
