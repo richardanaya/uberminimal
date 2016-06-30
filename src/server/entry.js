@@ -29,5 +29,4 @@ server.get(/^.*$/,
 );
 
 server.listen(port);
-console.log("static serving: "+__dirname+"/public" )
 console.log("listening on port "+port);
