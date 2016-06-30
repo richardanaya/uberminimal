@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon src/server/entry.js",
+    "server": "nodemon server-bundle.js",
     "dev": "webpack --progress --colors --watch"
   },
   "repository": {
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/richardanaya/inventory3d#readme",
   "dependencies": {
-    "express": "^2.5.11"
+    "express": "^2.5.11",
+    "webpack-node-externals": "^1.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",

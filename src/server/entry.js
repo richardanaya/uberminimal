@@ -12,7 +12,7 @@ var configureServer = function() {
     server.configure(
         function() {
             //any static file from the static directory, just return it to user if requested
-            server.use(express.static(__dirname + '/../../'));
+            server.use(express.static('public'));
         }
     );
     return server;
@@ -29,4 +29,5 @@ server.get(/^.*$/,
 );
 
 server.listen(port);
+console.log("static serving: "+__dirname+"/public" )
 console.log("listening on port "+port);
