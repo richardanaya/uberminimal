@@ -5,6 +5,7 @@ var nodeExternals = require('webpack-node-externals');
     module.exports = [{
         entry: './src/client/entry.js',
         output: {path: __dirname, filename: 'public/client-bundle.js'},
+        devtool: 'source-map',
         module: {
                 loaders: [
                     {

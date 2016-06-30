@@ -21,6 +21,12 @@ var configureServer = function() {
 var port = process.env.PORT || 3000;
 var server = configureServer();
 
+server.get("/secret",
+    function (req, res) {
+        res.send("tomato")
+    }
+);
+
 //Catch every url call and redirect to index.html
 server.get(/^.*$/,
     function (req, res) {

@@ -19,6 +19,7 @@
   "homepage": "https://github.com/richardanaya/inventory3d#readme",
   "dependencies": {
     "express": "^2.5.11",
+    "redux-thunk": "^2.1.0",
     "webpack-node-externals": "^1.2.0"
   },
   "devDependencies": {

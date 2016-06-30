@@ -7,8 +7,9 @@ import { syncHistoryWithStore, routerReducer, routerMiddleware } from 'react-rou
 import App from "./components/app"
 import reducers from './reducers'
 import "./styles/app.less"
+import thunk from 'redux-thunk';
 
-const middleware = routerMiddleware(browserHistory)
+const middleware = [thunk,routerMiddleware(browserHistory)]
 
 // Add the reducer to your store on the `routing` key
 const store = createStore(
@@ -16,7 +17,7 @@ const store = createStore(
         app: reducers,
         routing: routerReducer
     }),
-    applyMiddleware(middleware)
+    applyMiddleware(...middleware)
 )
 
 // Create an enhanced history that syncs navigation events with the store

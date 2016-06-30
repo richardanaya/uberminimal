@@ -1,11 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import {doSomething} from "../actions"
+import {getSecret} from "../actions"
 
 function app(props){
     return (
         <div>
-            <button onClick={()=>props.dispatch(doSomething())}>Do Something</button>
+            <button onClick={()=>props.dispatch(getSecret())}>Do Something</button>
             {props.app.message}
         </div>
     )

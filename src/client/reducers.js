@@ -1,13 +1,13 @@
-import {DO_SOMETHING} from "./actions"
+import {SHOW_SECRET} from "./actions"
 
 export default function(state = {
     message:""
 }, action) {
     switch (action.type) {
-        case DO_SOMETHING:
+        case SHOW_SECRET:
             return {
                 ...state,
-                message: "Something happened!"
+                message: action.secret
             }
         default:
             return state
