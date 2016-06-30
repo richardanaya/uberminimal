@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server-bundle.js",
-    "dev": "webpack --progress --colors --watch"
+    "server": "./node_modules/nodemon/bin/nodemon.js server-bundle.js",
+    "dev": "./node_modules/webpack/bin/webpack.js --progress --colors --watch"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/richardanaya/inventory3d#readme",
   "dependencies": {
     "express": "^2.5.11",
+    "nodemon": "^1.9.2",
     "redux-thunk": "^2.1.0",
     "webpack-node-externals": "^1.2.0"
   },
